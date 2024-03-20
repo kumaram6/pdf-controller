@@ -1,0 +1,6 @@
+apiVersion: k8s.startkubernetes.com.k8s.startkubernetes.com/v1
+kind: PdfDocument
+metadata:
+  name: pdfdocument-sample
+spec:
+  # TODO(user): Add fields here

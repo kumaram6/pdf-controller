@@ -1,0 +1,16 @@
+domain: k8s.startkubernetes.com
+layout:
+- go.kubebuilder.io/v3
+projectName: pdfcontroller
+repo: k8s.startkubernetes.com/v1
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: k8s.startkubernetes.com
+  group: k8s.startkubernetes.com
+  kind: PdfDocument
+  path: k8s.startkubernetes.com/v1/api/v1
+  version: v1
+version: "3"

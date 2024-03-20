@@ -1,0 +1,20 @@
+# permissions for end users to view pdfdocuments.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: pdfdocument-viewer-role
+rules:
+- apiGroups:
+  - k8s.startkubernetes.com.k8s.startkubernetes.com
+  resources:
+  - pdfdocuments
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - k8s.startkubernetes.com.k8s.startkubernetes.com
+  resources:
+  - pdfdocuments/status
+  verbs:
+  - get
